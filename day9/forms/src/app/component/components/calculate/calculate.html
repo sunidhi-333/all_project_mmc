@@ -1,0 +1,19 @@
+<h1>LEarn simple maths - by DC</h1>
+ 
+<p>Welcome to the simple maths calculator. You can perform basic arithmetic operations here.</p>
+ 
+<form name="myForm" (ngSubmit)="calculate()">
+    <input type="number" name="firstNumber" [(ngModel)]="firstNumber" placeholder="Enter first number" required>
+    <input type="number" name="secondNumber" [(ngModel)]="secondNumber" placeholder="Enter second number" required>
+    <button type="submit">Calculate</button>
+    <br>
+</form>
+ 
+ 
+<div>
+    <h2>Additon: {{additionResult}} </h2>
+    <h2>Subtraction: {{subtractionResult}}</h2>
+    <h2>Multiplication: {{multiplicationResult}}</h2>
+    <h2>Division: {{divisionResult}}</h2>
+</div>
+ 
